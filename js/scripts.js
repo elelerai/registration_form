@@ -1,9 +1,12 @@
 $(document).ready(function() {
   $("#registration form").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
+    var firstNameInput = $("input#firstName").val();
+    var secondNameInput = $("input#firstName").val();
     var inputEmail3Input= $("input#inputEmail3").val();
     var inputPassword3Input = $("input#inputPassword3").val();
+    var beverage = $("#beverage").val();
+    var flavor = $("input:radio[name=flavor]:checked").val();
+    var dob = $("#born").val();
 
 
     $(".person1").text(person1Input);
